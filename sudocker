@@ -251,7 +251,7 @@ echo -e "
  [$Gn!$We] 2. Action
  [$Rd"X"$We] 3. Exit
 "
-while true; do https://github.com/h0ru/sudocker
+while true; do 
 
 read -p " [🐋]> " option
 
