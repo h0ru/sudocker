@@ -37,3 +37,19 @@
 >
 > ``` 
 > ---
+
+> ## Menu
+> ### Without Docker and Group:
+> <div align="center">
+>  <h1> <img src="https://github.com/h0ru/sudocker/blob/main/photos/docker_off.png" width="400px"></h1>
+> </div>
+>
+> ### With Docker and Group: 
+> <div align="center">
+>  <h1> <img src="https://github.com/h0ru/sudocker/blob/main/photos/docker_on.png" width="400px"></h1>
+> </div>
+> 
+> ### Action: 
+> <div align="center">
+>  <h1> <img src="https://github.com/h0ru/sudocker/blob/main/photos/action.png" width="400px"></h1>
+> </div>
