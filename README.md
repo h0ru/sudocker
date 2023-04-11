@@ -33,6 +33,7 @@
 >    img           Show all the images
 >    ps            Show all the container processes
 >    ex            Execute a container. Use: sudocker ex <ID/NAME> <SHELL>
+>    stp           Stop a container. Use: sudocker stop <ID/NAME>
 >
 > ``` 
 > ---
