@@ -7,11 +7,11 @@
 > ## How to install?
 > ### Wget:
 > ```
-> wget -q https://raw.githubusercontent.com/h0ru/sudocker/main/sudocker -O sudocker ; chmod +x sudocker
+> wget -q https://raw.githubusercontent.com/h0ru/sudocker/main/script/sudocker -O sudocker ; chmod +x sudocker
 > ```
 > ### Curl: 
 > ```
-> curl -q https://raw.githubusercontent.com/h0ru/sudocker/main/sudocker -o sudocker ; chmod +x sudocker
+> curl -q https://raw.githubusercontent.com/h0ru/sudocker/main/script/sudocker -o sudocker ; chmod +x sudocker
 > ```
 > ---
 
