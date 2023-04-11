@@ -19,8 +19,8 @@ if [ -x "$(command -v docker)" ]; then
     [*]$Be docker is already installed on your machine! $We
     "
 else
-    apt-get update
-    apt-get -y install docker-ce docker-ce-cli containerd.io
+    apt update
+    apt install -y docker 
     usermod -aG docker $(whoami)
     echo -e "
     [*]$Gn docker has been installed on your machine! $We
@@ -33,7 +33,7 @@ if [ -x "$(command -v wget)" ]; then
     [*]$Be wget is already installed on your machine! $We
     "
 else
-    apt-get -y install wget
+    apt install -y wget
     echo -e "
     [*]$Gn wget has been installed on your machine! $We
     "
