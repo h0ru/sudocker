@@ -68,7 +68,7 @@ function action() {
   echo -e "
       $(docker_logo)
 
-      𝙳𝚘𝚌𝚔𝚎𝚛, 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛 𝚊𝚗𝚍 𝙰𝙲𝚃𝙸𝙾𝙽!
+     𝙳𝚘𝚌𝚔𝚎𝚛, 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛 𝚊𝚗𝚍 𝙰𝙲𝚃𝙸𝙾𝙽!
 
 1) Return
 2) Run
@@ -206,6 +206,7 @@ while [ $# -gt 0 ]; do
       exit 1
       ;;
       ex)
+      docker start $2
       docker exec -it $2 $3
       exit
       ;;
