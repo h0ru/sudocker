@@ -22,6 +22,19 @@
 > ``` 
 > ---
 
+> ## Use the install.sh
+> ```
+> curl -q https://github.com/h0ru/sudocker/blob/main/script/install.sh -o install.sh ; chmod +x install.sh
+> ```
+>
+> ```
+> The script downloads wget, docker and sudocker for you!
+> - wget
+> - docker docker.io
+> - sudocker
+> ```
+> ---
+
 > ## Help
 > ```
 >    USAGE:
