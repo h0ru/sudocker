@@ -1,9 +1,8 @@
 # SUDOCKER
 > ## Learn with sudocker
-> 
->                  ![image](https://github.com/h0ru/sudocker/blob/main/sudocker.png)
->
-> ---
+> <div align="center">
+>  <h1> <img src="https://github.com/h0ru/sudocker/blob/main/sudocker.png" width="250px"></h1>
+> </div>
 
 > ## How to install?
 > ### Wget:
