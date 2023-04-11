@@ -24,7 +24,7 @@
 
 > ## Use the install.sh
 > ```
-> curl -q https://github.com/h0ru/sudocker/blob/main/script/install.sh -o install.sh ; chmod +x install.sh
+> curl -q https://raw.githubusercontent.com/h0ru/sudocker/main/script/install.sh -o install.sh ; chmod +x install.sh
 > ```
 >
 > ```
