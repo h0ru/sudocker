@@ -20,7 +20,7 @@ if [ -x "$(command -v docker)" ]; then
     "
 else
     apt update
-    apt install -y docker 
+    apt install -y docker docker.io
     usermod -aG docker $(whoami)
     echo -e "
     [*]$Gn docker has been installed on your machine! $We
