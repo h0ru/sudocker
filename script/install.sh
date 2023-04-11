@@ -21,8 +21,7 @@ if [ -x "$(command -v docker)" ]; then
 else
     apt-get update
     apt-get -y install docker-ce docker-ce-cli containerd.io
-    usermod -aG docker $USER
-    clear
+    usermod -aG docker $(whoami)
     echo -e "
     [*]$Gn docker has been installed on your machine! $We
     "
@@ -35,7 +34,6 @@ if [ -x "$(command -v wget)" ]; then
     "
 else
     apt-get -y install wget
-    clear
     echo -e "
     [*]$Gn wget has been installed on your machine! $We
     "
@@ -48,7 +46,6 @@ if [ -x "$(command -v sudocker)" ]; then
     "
 else
     wget -q https://raw.githubusercontent.com/h0ru/sudocker/main/script/sudocker -O /usr/local/bin/sudocker ; chmod +x /usr/local/bin/sudocker
-    clear
     echo -e "
     [*]$Gn sudocker has been installed on your machine! $We
     "
