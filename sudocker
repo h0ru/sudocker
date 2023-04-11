@@ -35,6 +35,7 @@ function command_help() {
     $Gn""img""           $We""Show all the images""
     $Gn""ps""            $We""Show all the container processes""
     $Gn""ex""            $We""Execute a container."" Use:$Cn sudocker ex <ID/NAME> <SHELL>$We
+    $Gn""stp""           $We""Stop a container."" Use:$Cn sudocker stop <ID/NAME>$We
   "
 }
 
@@ -68,7 +69,7 @@ function action() {
   echo -e "
       $(docker_logo)
 
-     𝙳𝚘𝚌𝚔𝚎𝚛, 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛 𝚊𝚗𝚍 𝙰𝙲𝚃𝙸𝙾𝙽!
+    𝙳𝚘𝚌𝚔𝚎𝚛, 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛 𝚊𝚗𝚍 𝙰𝙲𝚃𝙸𝙾𝙽!
 
 1) Return
 2) Run
@@ -209,6 +210,13 @@ while [ $# -gt 0 ]; do
       docker start $2
       docker exec -it $2 $3
       exit
+      ;;
+      stp)
+      docker stop $2
+      echo -e "$Rd Stopped! $We"
+      echo
+      docker ps -a --filter "id=$2" --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+      exit 1
       ;;
     *)
       echo -e " [$Rd""Error!""$We] Invalid option: $1
